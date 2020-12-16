@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+      font-family: League Gothic Condensed;
+      font-weight: 400;
+      src: url(fonts/LeagueGothic-Condensed.woff) format("woff");
+    }
+    @font-face {
+      font-family: League Gothic Regular;
+      font-weight: 500;
+      src: url(fonts/LeagueGothic-Regular.woff) format("woff");
+    }
+  }
+
+.test {
+  border-left: 10px solid #000000;
+  border-top: 10px solid #000000;
+  border-right: 5px solid #000000;
+  border-bottom: 5px solid #000000;
+}
+
+.kleur {
+  color: rebeccapurple;
+  background-color: rebeccapurple;
+}
+
+.button::before, .button::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.button {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #ffffff;
+  border: solid #000000 5px;
+  width: 140px;
+  height: 75px;
+
+
+}
+.button::before {
+  bottom: 4px;
+  height: 75px;
+  width: 15px;
+  left: -19px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+.button::after {
+  right: 4px;
+  height:15px;
+  width: 140px;
+  bottom: 70px;
+  -webkit-transform: skewX(40deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+
+}
+.button:active {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.button:active::before {
+  bottom: -4px;
+  width: 5px;
+  left: -8px;
+}
+.button:active::after {
+  right: -2px;
+  width: 140px;
+  bottom: 70px;
+  height: 5px;
+}
+
+.buttonVierkant::before, .buttonVierkant::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.buttonVierkant {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #ffffff;
+  border: solid #000000 5px;
+  width: 75px;
+  height: 75px;
+
+}
+.buttonVierkant::before {
+  bottom: 4px;
+  height: 75px;
+  width: 15px;
+  left: -19px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+.buttonVierkant::after {
+  right: 4px;
+  height:15px;
+  width: 75px;
+  bottom: 70px;
+  -webkit-transform: skewX(40deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+
+}
+.buttonVierkant:active {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.buttonVierkant:active::before {
+  bottom: -4px;
+  width: 5px;
+  left: -8px;
+}
+.buttonVierkant:active::after {
+  right: -2px;
+  width: 75px;
+  bottom: 70px;
+  height: 5px;
+}
