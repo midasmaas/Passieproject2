@@ -13,6 +13,7 @@
       font-weight: 500;
       src: url(fonts/LeagueGothic-Regular.woff) format("woff");
     }
+    
   }
 
 .test {
@@ -138,4 +139,81 @@
   width: 75px;
   bottom: 70px;
   height: 5px;
+}
+
+
+.lijnOmLetters {
+  color: #000000;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.lijnOmLijn {
+  height: 15px;
+  border: 2px solid #000000;
+  background: #ffffff;
+}
+
+.lijnOmLijnDik {
+  height: 45px;
+  border: 10px solid #000000;
+  background: #ffffff;
+}
+
+
+.buttonSocial::before, .buttonSocial::after {
+  position: absolute;
+  content: '';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.buttonSocial {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-color: #000000;
+  border: solid #ffffff 5px;
+  width: 60px;
+  height: 60px;
+
+}
+.buttonSocial::before {
+  bottom: -3px;
+  height: 60px;
+  width: 5px;
+  left: -9px;
+  -webkit-transform: skewX(45deg);
+  transform: skewY(45deg);
+  background-color: #ffffff;
+}
+.buttonSocial::after {
+  right: -2px;
+  height:5px;
+  width: 59px;
+  bottom: 55px;
+  -webkit-transform: skewX(40deg);
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #ffffff;
+
+}
+.buttonSocial:active {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+.buttonSocial:active::before {
+  bottom: -4px;
+  width: 2px;
+  left: -7px;
+}
+.buttonSocial:active::after {
+  right: -4px;
+  width: 59px;
+  bottom: 55px;
+  height: 2px;
 }
