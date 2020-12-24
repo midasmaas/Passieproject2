@@ -217,3 +217,8 @@
   bottom: 55px;
   height: 2px;
 }
+
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
