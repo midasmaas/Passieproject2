@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css" rel="stylesheet">
+        .header {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            position: relative;
+        }
+        .title {
+            margin: 10px;
+            margin-right: auto;
+        }
+        .btn-navbar-toggle {
+            margin-left: auto;
+            display: flex;
+            margin: 10px;
+            margin-left: auto;
+            padding: auto;
+            align-items: center;
+        }
+        .section {
+            padding: 10px;
+        }
+        .btn-navbar {
+            display: flex;
+            position: relative;
+            margin: 10px;
+            width: 300px; /* ofzo */
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            height: 40px;
+            margin-left: auto;
+        }
+        .navbar-buttons {
+            display: none;
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            overflow-y: hidden;
+            flex-direction: column;
+            align-items: end;
+            background-color: #ffffff
+        }
+        .half-half{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <h1 class="title">My beautiful site</h1>
+            <button class="btn btn-navbar-toggle" id="hamburgerMenu">Hamburgermenu icon here...</button>
+            <div class="navbar-buttons">
+                <button class="btn btn-navbar">
+                    Page 1
+                </button>
+                <button class="btn btn-navbar">
+                    Page 2
+                </button>
+                <button class="btn btn-navbar">
+                    Page 3
+                </button>
+                <button class="btn btn-navbar">
+                    Page 4
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="section">
+        <h2>Content</h2>
+        <div class="half-half">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur tempore fuga voluptatem dolores dignissimos, eligendi id quia sint error voluptatibus enim cum mollitia cumque atque quibusdam nam ipsam inventore! Minus.
+                Soluta culpa corporis voluptas quisquam ipsum totam veniam ratione reiciendis odio atque natus adipisci pariatur assumenda distinctio qui commodi, magni, numquam perspiciatis officiis, repudiandae ex? Asperiores alias nostrum nobis consectetur?
+                Itaque nemo aperiam rerum cum ea incidunt optio consequuntur repellendus similique soluta, doloribus possimus molestias. Magnam quam ipsa corrupti consectetur. Dignissimos officiis cumque voluptatem quis, officia autem unde consectetur id.
+                Inventore molestiae tenetur earum voluptatem natus! Quos voluptas magni vitae minima corrupti eaque distinctio hic porro? Qui quos, tempore minus odit dignissimos tenetur officia dolores quae nemo tempora enim voluptas?
+                Numquam velit eos, eius quod nemo ratione, maxime quibusdam quis minima, excepturi sequi. Cumque earum facere accusantium, aut fugiat asperiores, tempore assumenda, consequuntur praesentium eligendi illum quod labore explicabo tempora!
+                Quos vero culpa omnis nemo molestiae tenetur praesentium repellendus, vel, incidunt odio quas, reiciendis accusamus deleniti aperiam! Eius labore quaerat error ut ipsum ea vero voluptatibus. Molestiae eos deserunt suscipit.
+                Magnam, minima quos? Et aut amet dolorem vero maxime eius modi officiis ullam, excepturi iure, commodi, maiores culpa at voluptates illo? Inventore deserunt a deleniti doloribus architecto atque aut debitis!
+                Voluptate atque sed molestias corrupti incidunt explicabo dignissimos soluta recusandae fugit sapiente quam impedit eveniet corporis commodi ducimus alias esse illo quos, nobis porro excepturi voluptatibus ut! Eligendi, assumenda nobis.
+                Molestias doloribus quibusdam asperiores maiores beatae distinctio voluptas, voluptatibus similique, nihil harum quisquam assumenda nobis itaque reiciendis esse perferendis! Aliquam, ea. Est pariatur adipisci nemo possimus facere consectetur, unde quidem?
+                Tempora accusamus doloremque natus ullam velit debitis ea, pariatur voluptas enim, non eveniet quas ipsam dolores repudiandae fugiat obcaecati, nostrum temporibus eligendi ducimus eos corporis. Sit aspernatur architecto quaerat minima.
+            </p>
+            <p class="test">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur tempore fuga voluptatem dolores dignissimos, eligendi id quia sint error voluptatibus enim cum mollitia cumque atque quibusdam nam ipsam inventore! Minus.
+                Soluta culpa corporis voluptas quisquam ipsum totam veniam ratione reiciendis odio atque natus adipisci pariatur assumenda distinctio qui commodi, magni, numquam perspiciatis officiis, repudiandae ex? Asperiores alias nostrum nobis consectetur?
+                Itaque nemo aperiam rerum cum ea incidunt optio consequuntur repellendus similique soluta, doloribus possimus molestias. Magnam quam ipsa corrupti consectetur. Dignissimos officiis cumque voluptatem quis, officia autem unde consectetur id.
+                Inventore molestiae tenetur earum voluptatem natus! Quos voluptas magni vitae minima corrupti eaque distinctio hic porro? Qui quos, tempore minus odit dignissimos tenetur officia dolores quae nemo tempora enim voluptas?
+                Numquam velit eos, eius quod nemo ratione, maxime quibusdam quis minima, excepturi sequi. Cumque earum facere accusantium, aut fugiat asperiores, tempore assumenda, consequuntur praesentium eligendi illum quod labore explicabo tempora!
+                Quos vero culpa omnis nemo molestiae tenetur praesentium repellendus, vel, incidunt odio quas, reiciendis accusamus deleniti aperiam! Eius labore quaerat error ut ipsum ea vero voluptatibus. Molestiae eos deserunt suscipit.
+                Magnam, minima quos? Et aut amet dolorem vero maxime eius modi officiis ullam, excepturi iure, commodi, maiores culpa at voluptates illo? Inventore deserunt a deleniti doloribus architecto atque aut debitis!
+                Voluptate atque sed molestias corrupti incidunt explicabo dignissimos soluta recusandae fugit sapiente quam impedit eveniet corporis commodi ducimus alias esse illo quos, nobis porro excepturi voluptatibus ut! Eligendi, assumenda nobis.
+                Molestias doloribus quibusdam asperiores maiores beatae distinctio voluptas, voluptatibus similique, nihil harum quisquam assumenda nobis itaque reiciendis esse perferendis! Aliquam, ea. Est pariatur adipisci nemo possimus facere consectetur, unde quidem?
+                Tempora accusamus doloremque natus ullam velit debitis ea, pariatur voluptas enim, non eveniet quas ipsam dolores repudiandae fugiat obcaecati, nostrum temporibus eligendi ducimus eos corporis. Sit aspernatur architecto quaerat minima.
+            </p>
+        </div>
+    </section>
+</body>
+
+<script rel="script" src="hamburger.js"></script>
+
+</html>
