@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Midas2-1</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,70 +11,109 @@
 
 
 
+ 
+    <section class="snap lg:h-screen p-0 md:p-16 lg:p-32 hoofdelement">
+
 <!--Hamburgermenu begin-->
 
 <div class="contents xl:hidden">
 
-    
+    <div class="flex flex-row justify-between">
+
+        <div class="p-4 w-28">
+            <a  href="#">
+                <img src="imgs/MLogo.png">
+            </a>
+        </div>
+
+        <div class="flex flex-col justify-end">
+            <label for="menu-toggle" class="p-8 xl:hidden block">
+                <a class="buttonVierkant2 p-4 float-right">
+                    <svg class="fill-current text-accent" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </a> 
+                 
+             </label>
+            <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        
+            
+            <div class="hidden w-full" id="menu">
+              <nav class="grid grid-rows-2 grid-cols-2 font-regular text-2xl animLijn">
+                <div class="p-8 pt-5 grid-cols-1 grid-rows-1">
+                    <a class="button2 p-4 text-center over2" href="#">
+                        OVER
+                        <hr class="lijn">
+                    </a>
+                </div>
+                <div class="p-8 pt-5 grid-cols-1 grid-rows-1">
+                    <a class="button2 p-4 text-center portfolio2" href="#">
+                        PORTFOLIO
+                        <hr class="lijn">
+                    </a>
+                </div>
+                <div class="p-8 pt-5 grid-cols-1 grid-rows-1 animLijn">
+                    <a class="button2 p-4 text-center vaardigheden2" href="#">
+                        VAARDIGHEDEN
+                        <hr class="lijn">
+                    </a>
+                </div>
+                <div class="p-8 pt-5 grid-cols-1 grid-rows-1 animLijn">
+                    <a class="button2 p-4 text-center contact2" href="#">
+                        CONTACT
+                        <hr class="lijn">
+                    </a>
+                </div>
+              </nav>
+            
+            </div>
+        </div>
+
+    </div>
     
    
-     <label for="menu-toggle" class="pointer-cursor xl:hidden block">
-        <a class="buttonVierkant p-4 text-center">
-            <svg class="fill-current text-accent" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-        </a> 
-         
-     </label>
-    <input class="hidden" type="checkbox" id="menu-toggle" />
-    
-    <div class="hidden w-full" id="menu">
-      <nav>
-        <div class="p-8 pt-5 self">
-            <a class="button p-4 text-center" href="#">OVER</a>
-        </div>
-        <div class="p-8 pt-5">
-            <a class="button p-4 text-center" href="#">PORTFOLIO</a>
-        </div>
-        <div class="p-8 pt-5">
-            <a class="button p-4 text-center" href="#">VAARDIGHEDEN</a>
-        </div>
-        <div class="p-8 pt-5">
-            <a class="button p-4 text-center" href="#">CONTACT</a>
-        </div>
-      </nav>
-    
-    </div>
+     
 
 </div>
 
 
 
 
-<!--Hamburger menu einde-->
- 
-    <section class="lg:h-screen p-0 md:p-16 lg:p-32 hoofdelement">
+<!--Hamburger menu einde-->        
            <!--Navbar groot begin-->
 
-<div class="hidden xl:contents">
-    <div class="font-regular text-2xl flex flex-row">
+<div class="sticky top-0 hidden xl:contents z-50">
+    <div class="font-regular text-2xl flex flex-row items-end">
     
-        <div class="w-28">
+        <div class="">
             <a  href="#">
-                <img src="imgs/MLogo.png">
+                <img class="w-28 pb-9" src="imgs/MLogo.png">
             </a>
         </div>
     
-        <div class="px-8 pt-5 self-end ">
-            <a class="button p-4 text-center" href="#">OVER</a>
+        <div class="pl-24 pr-2 animLijn">
+            <a class="button2 p-4 text-center over" href="#">
+                OVER
+                <hr class="lijn">
+            </a>
         </div>
-        <div class="px-8 pt-5 self-end">
-            <a class="button p-4 text-center" href="#">PORTFOLIO</a>
+        <div class="px-2 animLijn">
+            <a class="button2 p-4 text-center portfolio" href="#">
+                PORTFOLIO
+                <hr class="lijn">
+            </a>
         </div>
-        <div class="px-8 pt-5 self-end">
-            <a class="button p-4 text-center" href="#">VAARDIGHEDEN</a>
+        <div class="px-2 animLijn">
+            <a class="button2 p-4 text-center vaardigheden" href="#">
+                VAARDIGHEDEN
+                <hr class="lijn">
+            </a>
         </div>
-        <div class="px-8 pt-5 self-end">
-            <a class="button p-4 text-center" href="#">CONTACT</a>
+        <div class="px-2 animLijn">
+            <a class="button2 p-4 text-center contact" href="#">
+                CONTACT
+                <hr class="lijn">
+            </a>
         </div>
     
     </div>
@@ -107,10 +146,13 @@
                 <img class="h-full z-20" src="imgs/HoofdFoto.png">
             </div>
 
-            <div class="foto z-20 col-start-2 col-end-6 row-start-3 row-end-3 ">
+            <div class="foto z-20 col-start-2 col-end-6 row-start-3 row-end-3 skew-x-12">
      
-                <p1 class="gsap text-6xl sm:text-6xl md:text-8xl lg:text-9xl 2xl:text-9xl text-accent font-condensed">
-                    Met een Midas Touch
+                <p1 class="textAnimation text-6xl sm:text-6xl md:text-8xl lg:text-9xl 2xl:text-9xl text-accent font-condensed ">
+                    <span class="box"></span>
+                    <span class="hi">Met een</span>
+                    <span class="text"></span>
+                    <span class="cursor">_</span>
                 </p1>
             </div>
 
@@ -133,7 +175,7 @@
 
     <!--Over mij begin-->
 
-    <section class="xl:h-screen p-0 xl:p-8 2xl:p-32">
+    <section class="overMij snap xl:h-screen p-0 xl:p-8 2xl:p-32 overPlek overPlek2">
 
         
 
@@ -194,7 +236,7 @@
 
 
         <div class=>
-            <div class="flex flex-row flex-wrap">
+            <div class="flex flex-row flex-wrap justify-between items-end">
 
                 <div class="w-7/12 p-8">
 
@@ -202,8 +244,15 @@
 
                 </div>
 
-                <div>
-                    <a class="button p-4" href="#">OVER</a>
+                <div class="flex flex-row items-center animLijn">
+
+                    <p class="font-regular text-accent text-4xl pr-6"> 
+                        MEER
+                      
+                        <hr class="mt-10 lijn">
+                    </p>
+                    <a class="buttonVierkant2 pt-1 text-center text-accent" href="#"><p class="font-condensed text-accent text-5xl ">></p></a>
+                    
                 </div>
 
 
@@ -228,35 +277,41 @@
 
 <!--De Tijdlijn begin-->
 
-<section class=" p-0 xl:p-8 2xl:p-32">
+<section class="snap p-0 xl:p-8 2xl:p-32 portfolioPlek portfolioPlek2">
 
         
 
     <!--Titel tijdlijn begin-->
 
-<div class="flex flex-row">
+<div class="flex flex-col">
 
-    <div class="flex flex-col">
+    <div class="flex flex-row items-end">
 
+        
+    
         <div>
             <p1 class="font-condensed text-9xl">
-                <span class="lijnOmLetters">DE</span> TIJDLIJN
+                    <span class="lijnOmLetters">DE</span> TIJDLIJN
             </p1>
         </div>
-
-        <div>
-            <p1 class="font-regular text-accent text-3xl">
-                Wijsheid met de leeftijd.
-            </p1>
+        
+        
+        <div class="w-1/4 pb-5">
+            <hr class="lijnOmLijn">
         </div>
     
     </div>
-    
-    <div class="w-1/4 self-end">
-        <hr class="lijnOmLijn">
+
+    <div class="">
+        <p1 class="pt-0 font-regular text-accent text-3xl">
+            Wijsheid met de leeftijd.
+        </p1>
     </div>
 
 </div>
+
+
+
 
     <!--Titel tijdlijn einde-->
 
@@ -268,7 +323,7 @@
 <div class="grid grid-rows-3 xl:grid-rows-2 xl:grid-cols-2 gap-4 md:px-8 2xl:px-44 py-16 md:py-16 2xl:py-32">
 
         <!--item1: journalistiek-->
-    <div class="coll col-span-1 row-span-1">
+    <div class="coll col-span-1 row-span-1 journalistiek">
 
         <div class="grid grid-cols-3">
 
@@ -295,8 +350,13 @@
                         </p1>
                     </div>
 
-                    <div class="p-5">
-                        <a class="button p-4" href="#">OVER</a>
+                    <div class="flex flex-row items-center animLijn">
+
+                        <p class="font-regular text-accent text-4xl pr-6">
+                            MEER
+                            <hr class="mt-10 lijn">
+                        </p>
+                        <a class="buttonVierkant2 pt-1 text-center text-accent" href="#"><p class="font-condensed text-accent text-5xl">></p></a>
                     </div>
                 </div>
             </div>
@@ -307,7 +367,7 @@
     </div>
 
         <!--item2: verkoop-->
-    <div class="coll col-span-1 row-span-1">
+    <div class="coll col-span-1 row-span-1 verkoop">
 
         <div class="grid grid-cols-3 gap-4">
 
@@ -334,8 +394,13 @@
                         </p1>
                     </div>
 
-                    <div class="p-5">
-                        <a class="button p-4" href="#">OVER</a>
+                    <div class="flex flex-row items-center animLijn">
+
+                        <p class="font-regular text-accent text-4xl pr-6">
+                            MEER
+                            <hr class="mt-10 lijn">
+                        </p>
+                        <a class="buttonVierkant2 pt-1 text-center text-accent" href="#"><p class="font-condensed text-accent text-5xl">></p></a>
                     </div>
                 </div>
             </div>
@@ -346,7 +411,7 @@
     </div>
 
     <!--item3: front-end-->
-    <div class="coll col-span-1 row-span-1 py-8">
+    <div class="coll col-span-1 row-span-1 py-8 frontEnd">
 
         <div class="grid grid-cols-3">
 
@@ -373,8 +438,13 @@
                         </p1>
                     </div>
 
-                    <div class="p-5">
-                        <a class="button p-4" href="#">OVER</a>
+                    <div class="flex flex-row items-center animLijn">
+
+                        <p class="font-regular text-accent text-4xl pr-6">
+                            MEER
+                            <hr class="mt-10 lijn">
+                        </p>
+                        <a class="buttonVierkant2 pt-1 text-center text-accent" href="#"><p class="font-condensed text-accent text-5xl">></p></a>
                     </div>
                 </div>
             </div>
@@ -393,7 +463,7 @@
 
     <!--De specs begin-->
 
-    <section class="xl:h-screen p-0 py- xl:px-8 2xl:p-32">
+    <section class="snap xl:h-screen p-0 py- xl:px-8 2xl:p-32 vaardighedenPlek vaardighedenPlek2">
 
         <!--Titel specs begin-->
 
@@ -487,7 +557,7 @@
 
     <!--Koffie begin-->
 
-    <section class="h-screen">
+    <section class="snap h-screen contactPlek contactPlek2">
 
 
         <!--Titel koffie begin-->
@@ -577,34 +647,15 @@
 
             <div class="flex flex-col p-12">
 
-                <div>
-                    <a href="#">Home</a>
-                </div>
-
-                <div>
-                    <a href="#">Over</a>
-                </div>
-
-
-                <div>
-                    <a href="#">Journalistiek</a>
-                </div>
-
-                <div>
-                    <a href="#">Front-end</a>
-                </div>
-
-                <div>
-                    <a href="#">Verkoop</a>
-                </div>
-
-                <div>
-                    <a href="#">Vaardigheden</a>
-                </div>
-
-                <div>
-                    <a href="#">Contact</a>
-                </div>
+                <ul class="animLijnFooter">
+                    <li><a href="#" data-hover="Home">HOME</a></li>
+                    <li><a href="#" data-hover="About Us">OVER</a></li>
+                    <li><a href="#" data-hover="Blog">CONTACT</a></li>
+                    <li><a href="#" data-hover="Services">VAARDIGHEDEN</a></li>
+                    <li><a href="#" data-hover="Products">FRONT-END</li>
+                    <li><a href="#" data-hover="Contact">VERKOOP</a></li>
+                    <li><a href="#" data-hover="Contact">JOURNALISTIEK</a></li>
+                </ul>
                 
                  
 
@@ -617,19 +668,27 @@
 
             <div class="flex flex-row p-12">
                 <div class="p-6">
-                    <a class="buttonSocial" href="#">OVER</a>
+                    <a class="buttonSocial p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 101.85 87.6"><defs><clipPath id="a"><polygon points="0 87.6 2.63 0 101.85 0 99.22 87.6 0 87.6" fill="none"/></clipPath></defs><g clip-path="url(#a)"><path d="M18,26.87H5.05A3.29,3.29,0,0,0,1.73,30L.09,84.48a3.07,3.07,0,0,0,3,3.12h13a3.27,3.27,0,0,0,3.31-3.12L21.07,30a3.07,3.07,0,0,0-3-3.12H18" fill="#fff"/><path d="M18.75,0H5.86A3.29,3.29,0,0,0,2.53,3.12L2.2,14.19a3.07,3.07,0,0,0,3,3.12h13a3.29,3.29,0,0,0,3.31-3.12l.33-11.07a3,3,0,0,0-3-3.12h-.13" fill="#fff"/><path d="M76.52,25.28a30,30,0,0,0-22.31,9.59,2.12,2.12,0,0,1-1.31.79c-.49,0-.77-.52-.74-1.52L52.28,30a3.06,3.06,0,0,0-3-3.12H37.64A3.31,3.31,0,0,0,34.32,30L32.68,84.48a3.07,3.07,0,0,0,3,3.12h13A3.31,3.31,0,0,0,52,84.48l.56-19a60.1,60.1,0,0,1,2-16.24,14,14,0,0,1,5.69-7,16.17,16.17,0,0,1,9.1-2.67A11.47,11.47,0,0,1,76,41.43a10.13,10.13,0,0,1,3.87,5.23Q81,50,80.67,61.46l-.69,23a3.05,3.05,0,0,0,3,3.12H96a3.28,3.28,0,0,0,3.31-3.12l.92-30.86A55.7,55.7,0,0,0,99.56,41,19.52,19.52,0,0,0,96,33.19a18.63,18.63,0,0,0-7.84-5.7,29.41,29.41,0,0,0-11.64-2.22" fill="#fff"/></g></svg>
+                    </a>
                 </div>
                     
                 <div class="p-6">
-                    <a class="buttonSocial" href="#">OVER</a>
+                    <a class="buttonSocial pl-5 pb-2 pt-3 pr-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 49.69 87.6"><defs><clipPath id="a"><polygon points="0 87.6 2.63 0 49.69 0 47.06 87.6 0 87.6" fill="none"/></clipPath></defs><g clip-path="url(#a)"><path d="M37.27,0C25,0,16.32,7.26,15.92,20.58l-.35,11.49H1.67L1.2,47.66H15.11l-1.2,40H30.55l1.2-39.95H45.62l2.54-15.59H32.22l.29-9.94c.14-4.51,1.52-7.59,8.21-7.59h8.53L49.67.61A119.76,119.76,0,0,0,37.26,0" fill="#fff"/></g></svg>
+                    </a>
                 </div>
 
                 <div class="p-6">
-                    <a class="buttonSocial" href="#">OVER</a>
+                    <a class="buttonSocial px-2 pt-4 pb-1" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 101.85 60.45"><defs><clipPath id="a"><polygon points="0 60.44 1.81 0 101.85 0 100.04 60.45 0 60.44" fill="none"/></clipPath></defs><g clip-path="url(#a)"><path d="M12.67,48.72,13.14,33H28.36a16.17,16.17,0,0,1,6.16,1,6.1,6.1,0,0,1,3.75,6.32A7.62,7.62,0,0,1,34,47.68a15.23,15.23,0,0,1-6.3,1h-15m.76-25.48.39-13H27.29a24.23,24.23,0,0,1,7.28.93,5.08,5.08,0,0,1,3.16,5.44,5.7,5.7,0,0,1-2.67,5.17,13.1,13.1,0,0,1-6.59,1.46h-15M31.69,0H1.81L.05,59H27.91a44.42,44.42,0,0,0,8.76-.8,17.94,17.94,0,0,0,7.07-2.95,17.46,17.46,0,0,0,4.52-4.63,17,17,0,0,0,3-9.41,14.76,14.76,0,0,0-2.15-8.64,13.29,13.29,0,0,0-7-5.2A15.53,15.53,0,0,0,47,24a13.07,13.07,0,0,0,3.11-8.68,14.23,14.23,0,0,0-2.55-9Q43,.16,31.69,0" fill="#fff"/><path d="M92.15,2.76H65.66l-.22,7.33H91.93l.22-7.33" fill="#fff"/><path d="M67.85,32.83a12,12,0,0,1,3.39-6.73,10,10,0,0,1,7.2-2.5,10.59,10.59,0,0,1,7,2.34,9.09,9.09,0,0,1,3,6.9H67.84M78.72,14.21a23.26,23.26,0,0,0-16.53,6q-6.48,6-6.83,17.39Q55,49.72,61.83,55.09a25,25,0,0,0,16,5.35,23.47,23.47,0,0,0,17.39-6.35,14.75,14.75,0,0,0,4.66-7.88H87.63a10,10,0,0,1-2.56,3,10.63,10.63,0,0,1-6.69,2,12.18,12.18,0,0,1-6.54-1.64,9.94,9.94,0,0,1-4.52-9.19h33.33a54.41,54.41,0,0,0-.14-8.66,20,20,0,0,0-3.39-9,17.4,17.4,0,0,0-7.7-6.45A26.67,26.67,0,0,0,78.73,14.2" fill="#fff"/></g></svg>
+                    </a>
                 </div>
 
                 <div class="p-6">
-                    <a class="buttonSocial" href="#">OVER</a>
+                    <a class="buttonSocial p-2" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91.43 87.6"><defs><clipPath id="a"><polygon points="0 87.54 2.62 0 92.74 0 90.11 87.54 0 87.54" fill="none"/></clipPath></defs><g clip-path="url(#a)"><path d="M31.29,23.34a4.31,4.31,0,0,0-3,1.36,12.4,12.4,0,0,0-4.21,9C23.89,39.08,27.76,44.23,28.3,45S35.86,56.62,47,61.32a64.5,64.5,0,0,0,6.33,2.28,14.33,14.33,0,0,0,4.31.63,18,18,0,0,0,2.74-.2c2.16-.3,6.71-2.62,7.72-5.14a8.8,8.8,0,0,0,.8-5.15c-.26-.47-1-.73-2.11-1.28s-6.54-3.15-7.56-3.52A3.76,3.76,0,0,0,58,48.66a1.58,1.58,0,0,0-1.34.83c-.79,1.08-3,3.52-3.68,4.25a1.64,1.64,0,0,1-1.23.61,2.69,2.69,0,0,1-1.2-.35,29.56,29.56,0,0,1-8.86-5.38,31.78,31.78,0,0,1-6-7.5c-.62-1.08,0-1.62.56-2.2a34.56,34.56,0,0,0,2.91-3.7,1.92,1.92,0,0,0,0-1.91c-.26-.54-2.34-5.88-3.22-8-.75-1.86-1.56-1.86-2.21-1.86h-.24c-.65,0-1.4,0-2.15,0M11.07,77.25,15.24,64l-.85-1.36A34.25,34.25,0,0,1,9.28,43.4c.6-19.88,17.81-36,38.38-36A36.59,36.59,0,0,1,73.72,17.92a34.2,34.2,0,0,1,10.14,25.5C83.26,63.3,66,79.48,45.48,79.48h0a37.55,37.55,0,0,1-18.84-5l-1.33-.78L11.07,77.25M47.86,0C23.12,0,2.41,19.48,1.69,43.4A41.25,41.25,0,0,0,7,65.07L0,87.55l24-6A45,45,0,0,0,45.25,86.8h0C70,86.8,90.71,67.35,91.43,43.42A41.06,41.06,0,0,0,79.22,12.75,44,44,0,0,0,47.87,0" fill="#fff"/></g></svg>
+                    </a>
                 </div>
             </div>
 
@@ -646,25 +705,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/Draggable.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/PixiPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/TextPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
+<script src="animation.js"></script>
 
-<script>
-
-var rule = CSSRulePlugin.getRule("textAnim:after");
-
-
-gsap.from(".gsap", {duration:1, y:-50, opacity: 0, stagger: 0.3})
-gsap.from(".foto", {duration:1, y:30, opacity: 0, delay: 1.4})
-gsap.to(rule, {cssRule: {scaleY: 0}, duration: 1})
-</script>
 
 </body>
 
-<script rel="script" src="../hamburger.js"></script>
+<script rel="script" src="script.js"></script>
 
 </html>

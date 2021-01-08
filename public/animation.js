@@ -20,14 +20,14 @@ words.forEach(word =>{
 })
 
 
-var rule = CSSRulePlugin.getRule("textAnim:after");
+gsap.utils.toArray("nav a").forEach(function(a) {
+    a.addEventListener("click", function(e) {
+      e.preventDefault();
+      gsap.to(window, {duration: 1, scrollTo: e.target.getAttribute("href")});
+    });
+  });
 
-
-gsap.from(".gsap", {duration:1, y:-50, opacity: 0, stagger: 0.3})
-gsap.from(".foto", {duration:1, y:30, opacity: 0, delay: 1.4})
-gsap.to(rule, {cssRule: {scaleY: 0}, duration: 1})
-
-gsap.from(".lijnOmLijnDik", {
+  gsap.from(".lijnOmLijnDik", {
     scrollTrigger: {
       trigger: ".overMij",
       scrub: true,
@@ -41,3 +41,57 @@ gsap.from(".lijnOmLijnDik", {
   });
 
 
+/*
+  gsap.to(".tijdlijnElem", {
+    scrollTrigger: ".tijdlijn",
+    scale: 2, 
+    repeat: -1, 
+    yoyo: true, 
+    ease: "power2"
+  });
+
+  
+
+ 
+
+  gsap.to(".tijdlijnElem", {
+    scrollTrigger: ".tijdlijn", 
+    scale: 2, 
+    repeat: -1, 
+    ease: "power2"
+  });
+
+  */
+
+  ScrollTrigger.defaults({
+  toggleActions: "play reset play reset"
+});
+
+
+
+  gsap.from(".journalistiek", {
+    scrollTrigger: ".journalistiek", 
+    duration:1, 
+    x:-400, 
+    opacity: 0, 
+    stagger: 0.3,
+    ease: "power2"
+  });
+
+  gsap.from(".verkoop", {
+    scrollTrigger: ".verkoop", 
+    duration:1, 
+    x:+200, 
+    opacity: 0, 
+    stagger: 0.3,
+    ease: "power2"
+  });
+
+  gsap.from(".frontend", {
+    scrollTrigger: ".frontend", 
+    duration:1, 
+    x:-200, 
+    opacity: 0, 
+    stagger: 0.3,
+    ease: "power2"
+  });

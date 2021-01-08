@@ -31565,6 +31565,8 @@ video {
   transition: all .5s;
 }
 
+/*NavbarKnop */
+
 .button {
   display: inline-block;
   color: #000000;
@@ -31613,6 +31615,70 @@ video {
   bottom: 70px;
   height: 5px;
 }
+
+/*ButtonNavBar einde */
+
+/*ButtonNavbar 2.0 */
+
+.button2::before, .button2::after {
+  position: absolute;
+  content: '';
+  transition: all .5s;
+}
+
+.button2 {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  transition: all .5s;
+  background-color: #ffffff;
+  border: solid #000000 5px;
+  width: 140px;
+  height: 75px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.button2::before {
+  bottom: -1px;
+  height: 75px;
+  width: 7px;
+  left: -12px;
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+
+.button2::after {
+  right: 0px;
+  height: 7px;
+  width: 139px;
+  bottom: 70px;
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+}
+
+.button2:hover {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.button2:hover::before {
+  bottom: -2px;
+  width: 3px;
+  left: -8px;
+}
+
+.button2:hover::after {
+  right: -2px;
+  width: 139px;
+  bottom: 70px;
+  height: 4px;
+}
+
+/*Button NavBar 2.0 einde */
 
 .buttonVierkant::before, .buttonVierkant::after {
   position: absolute;
@@ -31677,8 +31743,8 @@ video {
 }
 
 .lijnOmLijn {
-  height: 15px;
-  border: 2px solid #000000;
+  height: 18px;
+  border: 5px solid #000000;
   background: #ffffff;
 }
 
@@ -31687,6 +31753,8 @@ video {
   border: 10px solid #000000;
   background: #ffffff;
 }
+
+/*social buttons CSS*/
 
 .buttonSocial::before, .buttonSocial::after {
   position: absolute;
@@ -31725,23 +31793,185 @@ video {
   background-color: #ffffff;
 }
 
-.buttonSocial:active {
+.buttonSocial:hover {
   margin-left: -5px;
   margin-top: -5px;
 }
 
-.buttonSocial:active::before {
+.buttonSocial:hover::before {
   bottom: -4px;
   width: 2px;
   left: -7px;
 }
 
-.buttonSocial:active::after {
+.buttonSocial:hover::after {
   right: -4px;
   width: 59px;
   bottom: 55px;
   height: 2px;
 }
+
+/*social buttons CSS*/
+
+/*buttonVierkant2 CSS*/
+
+.buttonVierkant2::before, .buttonVierkant2::after {
+  position: absolute;
+  content: '';
+  transition: all .5s;
+}
+
+.buttonVierkant2 {
+  display: inline-block;
+  color: #000000;
+  position: relative;
+  text-decoration: none;
+  transition: all .5s;
+  background-color: #ffffff;
+  border: solid #000000 5px;
+  width: 60px;
+  height: 60px;
+}
+
+.buttonVierkant2::before {
+  bottom: -3px;
+  height: 60px;
+  width: 5px;
+  left: -9px;
+  transform: skewY(45deg);
+  background-color: #000000;
+}
+
+.buttonVierkant2::after {
+  right: -2px;
+  height:5px;
+  width: 59px;
+  bottom: 55px;
+  transform: skewY(0deg);
+  transform: skewX(45deg);
+  background-color: #000000;
+}
+
+.buttonVierkant2:hover {
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.buttonVierkant2:hover::before {
+  bottom: -4px;
+  width: 2px;
+  left: -7px;
+}
+
+.buttonVierkant2:hover::after {
+  right: -4px;
+  width: 59px;
+  bottom: 55px;
+  height: 2px;
+}
+
+/*buttonVierkant2 eind CSS*/
+
+/*hamburgermenu CSS*/
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+/*Animatie stijlen */
+
+.textAnimation {
+  position: relative;
+  overflow: hidden;
+}
+
+.box {
+  position: absolute;
+  display: inline-block;
+  z-index: -1;
+  bottom: 0;
+}
+
+.hi{
+  display: inline-block;
+}
+
+/*Animatielijntje*/
+
+/*NAVBAR*/
+
+.animLijn a > .lijn {
+  border: 1px solid white;
+  width: 0%;
+  position: absolute;
+  transition: all 0.35s ease;
+}
+
+.animLijn a:hover > .lijn {
+  width: 75%;
+  border: 3px solid #E44200;
+  background-color: #E44200;
+}
+
+.animLijn:hover > .lijn {
+  width: 75%;
+  border: 3px solid #E44200;
+  background-color: #E44200;
+}
+
+/*MEER-linkjes*/
+
+.animLijn > .lijn {
+  border: 1px solid white;
+  width: 0%;
+  position: absolute;
+  transition: all 0.35s ease;
+}
+
+.animLijn:hover > .lijn {
+  width: 52px;
+  border: 3px solid #E44200;
+  background-color: #E44200;
+}
+
+/*FOOTER-linkjes*/
+
+.animLijnFooter a {
+  position: relative;
+  text-decoration: none;
+}
+
+.animLijnFooter a:before,
+  .animLijnFooter a:after {
+  position: absolute;
+  transition: all 0.35s ease;
+}
+
+.animLijnFooter a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #ffffff;
+}
+
+.animLijnFooter a:hover:before {
+  width: 100%;
+}
+
+/*snapping voor animaties*/
+
+/*
+html {
+  scroll-snap-type: y;
+}
+
+.snap {
+  scroll-snap-align: start;
+}
+
+*/
 
 #menu-toggle:checked + #menu {
   display: block;
@@ -186286,3 +186516,4 @@ video {
             animation: bounce 1s infinite;
   }
 }
+
