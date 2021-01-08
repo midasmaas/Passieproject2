@@ -155,8 +155,6 @@ document.querySelector(".vaardigheden2").addEventListener("click", vaardigheden2
 document.querySelector(".contact2").addEventListener("click", contact2);
 
 
-/*Functie hamburgermenuknop */
-
 var box = document.getElementById("menu-toggle");
 
 function toggleMenu(){

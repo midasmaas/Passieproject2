@@ -31977,6 +31977,16 @@ html {
   display: block;
 }
 
+/*percentages voor SPECS-balken */
+
+.percentage {
+  position: absolute;
+  top: 45%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -186516,4 +186526,3 @@ html {
             animation: bounce 1s infinite;
   }
 }
-

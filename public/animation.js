@@ -63,11 +63,6 @@ gsap.utils.toArray("nav a").forEach(function(a) {
 
   */
 
-  ScrollTrigger.defaults({
-  toggleActions: "play reset play reset"
-});
-
-
 
   gsap.from(".journalistiek", {
     scrollTrigger: ".journalistiek", 
@@ -95,3 +90,33 @@ gsap.utils.toArray("nav a").forEach(function(a) {
     stagger: 0.3,
     ease: "power2"
   });
+
+
+  let tlBalken = gsap.timeline({
+    scrollTrigger: ".SVGBalken",
+    duration:1,
+    stagger: 0.3,
+    ease: "power2"
+});
+
+tlBalken.fromTo("#balk1", {x: "-15rem"}, {x: "0rem",
+    onUpdate: function () {
+        var percentage = this.progress();
+        var result = Math.round((percentage)*100);
+        document.getElementById('percentageHTML1').innerText = result + "%";
+    }}).fromTo("#balk2", {x: -300}, {x:-60,
+    onUpdate: function () {
+        var percentage = this.progress();
+        var result = Math.round((percentage)*80);
+        document.getElementById('percentageHTML2').innerText = result + "%";
+    }}).fromTo("#balk3", {x: -300}, {x:-240,
+    onUpdate: function () {
+        var percentage = this.progress();
+        var result = Math.round((percentage)*20);
+        document.getElementById('percentageHTML3').innerText = result + "%";
+    }}).fromTo("#balk4", {x: -300}, {x:-180,
+    onUpdate: function () {
+        var percentage = this.progress();
+        var result = Math.round((percentage)*40);
+        document.getElementById('percentageHTML4').innerText = result + "%";
+    }});

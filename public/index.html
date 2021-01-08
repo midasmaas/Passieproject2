@@ -2,125 +2,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Midas2-1</title>
+  <title>TEST</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 
 
+<!--Sticky navbar begin-->
+<nav class="fixed w-full z-30 top-0 bg-white">
 
-
- 
-    <section class="snap lg:h-screen p-0 md:p-16 lg:p-32 hoofdelement">
-
-<!--Hamburgermenu begin-->
+    <!--Hamburgermenu begin-->
 
 <div class="contents xl:hidden">
 
-    <div class="flex flex-row justify-between">
+<div class="flex flex-row justify-between">
 
-        <div class="p-4 w-28">
-            <a  href="#">
-                <img src="imgs/MLogo.png">
-            </a>
-        </div>
-
-        <div class="flex flex-col justify-end">
-            <label for="menu-toggle" class="p-8 xl:hidden block">
-                <a class="buttonVierkant2 p-4 float-right">
-                    <svg class="fill-current text-accent" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                    </svg>
-                </a> 
-                 
-             </label>
-            <input class="hidden" type="checkbox" id="menu-toggle" />
-
-        
-            
-            <div class="hidden w-full" id="menu">
-              <nav class="grid grid-rows-2 grid-cols-2 font-regular text-2xl animLijn">
-                <div class="p-8 pt-5 grid-cols-1 grid-rows-1">
-                    <a class="button2 p-4 text-center over2" href="#">
-                        OVER
-                        <hr class="lijn">
-                    </a>
-                </div>
-                <div class="p-8 pt-5 grid-cols-1 grid-rows-1">
-                    <a class="button2 p-4 text-center portfolio2" href="#">
-                        PORTFOLIO
-                        <hr class="lijn">
-                    </a>
-                </div>
-                <div class="p-8 pt-5 grid-cols-1 grid-rows-1 animLijn">
-                    <a class="button2 p-4 text-center vaardigheden2" href="#">
-                        VAARDIGHEDEN
-                        <hr class="lijn">
-                    </a>
-                </div>
-                <div class="p-8 pt-5 grid-cols-1 grid-rows-1 animLijn">
-                    <a class="button2 p-4 text-center contact2" href="#">
-                        CONTACT
-                        <hr class="lijn">
-                    </a>
-                </div>
-              </nav>
-            
-            </div>
-        </div>
-
+    <div class="p-4 w-28">
+        <a  href="#">
+            <img src="imgs/MLogo.png">
+        </a>
     </div>
+
+    <div class="flex flex-col justify-end">
+        
+            <a  for="menu-toggle" class="butto nVierkant2 p-4 float-right" id="menu-button">
+                <svg class="fill-current text-accent" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </a> 
+             
+         
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
     
-   
-     
+        
+        <div class="hidden w-screen h-screen bg-white" id="menu">
+          <nav class="grid grid-rows-2 grid-cols-2 font-regular text-2xl animLijn">
+            <div class="p-8 pt-5 grid-cols-1 grid-rows-1">
+                <a class="button2 p-4 text-center over2" href="#">
+                    OVER
+                    <hr class="lijn">
+                </a>
+            </div>
+            <div class="p-8 pt-5 grid-cols-1 grid-rows-1">
+                <a class="button2 p-4 text-center portfolio2" href="#">
+                    PORTFOLIO
+                    <hr class="lijn">
+                </a>
+            </div>
+            <div class="p-8 pt-5 grid-cols-1 grid-rows-1 animLijn">
+                <a class="button2 p-4 text-center vaardigheden2" href="#">
+                    VAARDIGHEDEN
+                    <hr class="lijn">
+                </a>
+            </div>
+            <div class="p-8 pt-5 grid-cols-1 grid-rows-1 animLijn">
+                <a class="button2 p-4 text-center contact2" href="#">
+                    CONTACT
+                    <hr class="lijn">
+                </a>
+            </div>
+          </nav>
+        
+        </div>
+    </div>
 
 </div>
 
 
+ 
+
+</div>
+
+<!--Hamburger menu einde-->
 
 
-<!--Hamburger menu einde-->        
-           <!--Navbar groot begin-->
+<!--Navbar groot begin-->
 
 <div class="sticky top-0 hidden xl:contents z-50">
-    <div class="font-regular text-2xl flex flex-row items-end">
-    
-        <div class="">
-            <a  href="#">
-                <img class="w-28 pb-9" src="imgs/MLogo.png">
-            </a>
-        </div>
-    
-        <div class="pl-24 pr-2 animLijn">
-            <a class="button2 p-4 text-center over" href="#">
-                OVER
-                <hr class="lijn">
-            </a>
-        </div>
-        <div class="px-2 animLijn">
-            <a class="button2 p-4 text-center portfolio" href="#">
-                PORTFOLIO
-                <hr class="lijn">
-            </a>
-        </div>
-        <div class="px-2 animLijn">
-            <a class="button2 p-4 text-center vaardigheden" href="#">
-                VAARDIGHEDEN
-                <hr class="lijn">
-            </a>
-        </div>
-        <div class="px-2 animLijn">
-            <a class="button2 p-4 text-center contact" href="#">
-                CONTACT
-                <hr class="lijn">
-            </a>
-        </div>
-    
+<div class="font-regular text-2xl flex flex-row items-end">
+
+    <div class="">
+        <a  href="#">
+            <img class="w-28 pb-9" src="imgs/MLogo.png">
+        </a>
     </div>
+
+    <div class="pl-24 pr-2 animLijn">
+        <a class="button2 p-4 text-center over" href="#">
+            OVER
+            <hr class="lijn">
+        </a>
+    </div>
+    <div class="px-2 animLijn">
+        <a class="button2 p-4 text-center portfolio" href="#">
+            PORTFOLIO
+            <hr class="lijn">
+        </a>
+    </div>
+    <div class="px-2 animLijn">
+        <a class="button2 p-4 text-center vaardigheden" href="#">
+            VAARDIGHEDEN
+            <hr class="lijn">
+        </a>
+    </div>
+    <div class="px-2 animLijn">
+        <a class="button2 p-4 text-center contact" href="#">
+            CONTACT
+            <hr class="lijn">
+        </a>
+    </div>
+
+</div>
 </div>           
 
 
 <!--Nav bar groot eind-->
+
+</nav>
+
+
+    
+    
+
+<!--Sticky navbar einde-->
+
+ 
+    <section class="snap lg:h-screen p-0 md:p-16 lg:p-32 hoofdelement">
+
+
 
 
 
@@ -492,45 +502,57 @@
 <div class="flex flex-col-reverse items-center justify-center md:flex-row">
 
     <!--item balken-->
-        <div class="coll col-span-1 2xl:w-1/2 place-self-center">
+    <div class="font-regular flex flex-col p-24 SVGBalken">
 
-            <div class="flex flex-col">
 
-                <div class="p-8">
-                    <p1 class="font-regular text-2xl m-5">
-                        <span class="text-accent">INTER</span>VIEWEN<span class="text-accent">.</span>
-                    </p1>
-                    <svg class="h-12" id="f5a77425-78b2-4416-8a73-b13c8fc230c9" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570.83 58.08"><path id="eb0cacfd-a0c5-46cf-982b-38db64aa21fb" data-name="Path 25" d="M566.46,55.08l-4.71-12.92L562.93,3l4.7,12.92Z"/><path id="bc45776d-26ce-4447-ba4b-74bd71f31384" data-name="Path 26" d="M7.91,55.08,3.2,42.16H561.75l4.71,12.92Z"/><path id="aa9b88c8-3bb5-432b-b960-cdda5a41d314" data-name="Path 27" d="M9.08,15.92,4.37,3H562.93l4.71,12.92Z" style="fill:#a86889"/><path id="e4eba973-5b88-434f-b78f-cf0c6de6845a" data-name="Path 28" d="M7.91,55.08,3.2,42.16,4.37,3,9.08,15.92Z" style="fill:#7e4f67"/><path id="e3bb1739-8ff5-4b84-90b2-fe94b9a7550f" data-name="Path 29" d="M567.64,15.92l-1.18,39.16H7.91L9.08,15.92Z" style="fill:#fff"/><path id="ff2d5efd-3306-4499-b5c9-94cbaa45d9ad" data-name="Path 30" d="M4.71,58.08,0,45.17,1.35,0,6.06,12.92Z"/><path id="eb4414a9-a0af-41e4-bbe0-50e8f1d66cd0" data-name="Path 31" d="M6.06,12.92,1.35,0H566.12l4.71,12.92Z"/><path id="fb067f48-07d5-43a4-a28f-00c51ea28c3b" data-name="Path 32" d="M6.06,12.92H570.83l-1.35,45.16H4.71Zm560.4,42.16,1.18-39.16H9.08L7.9,55.08H566.46"/><g style="isolation:isolate"><g style="isolation:isolate"><path d="M526.72,43.76a6.94,6.94,0,0,1-.15,1.32,4,4,0,0,1-1,2,3.82,3.82,0,0,1-5.2,0,4,4,0,0,1-1-2,7.26,7.26,0,0,1-.16-1.32V41.52a5.23,5.23,0,0,1,1.46-3.77,5,5,0,0,1-1.3-3.51V32.63a5.41,5.41,0,0,1,.49-2.24,3.52,3.52,0,0,1,6.22,0,5.28,5.28,0,0,1,.47,2.24v1.61a5,5,0,0,1-1.31,3.51,5.19,5.19,0,0,1,1.46,3.77ZM524,42.64a19.21,19.21,0,0,0-.13-2.55c-.1-.55-.39-.83-.88-.83s-.78.28-.86.83a15.77,15.77,0,0,0,.08,4.73.77.77,0,0,0,.78.65.83.83,0,0,0,.88-.75A13.75,13.75,0,0,0,524,42.64Zm-.18-9a11.69,11.69,0,0,0-.13-2c-.1-.44-.34-.65-.7-.65s-.52.18-.63.57a13.64,13.64,0,0,0-.05,4.24c.08.47.31.7.68.7s.6-.23.7-.7A13.47,13.47,0,0,0,523.81,33.62Z"/><path d="M535.74,43.91a5.21,5.21,0,0,1-.46,2.08,3.65,3.65,0,0,1-1.12,1.41,3.39,3.39,0,0,1-2.16.65,3.46,3.46,0,0,1-2.19-.65A3.57,3.57,0,0,1,528.72,46a5.39,5.39,0,0,1-.47-2.08V32.65a5.37,5.37,0,0,1,.47-2,3.63,3.63,0,0,1,1.09-1.43,3.59,3.59,0,0,1,2.19-.65,3.51,3.51,0,0,1,2.16.65,3.71,3.71,0,0,1,1.12,1.43,5.18,5.18,0,0,1,.46,2Zm-2.81-11.26a1.71,1.71,0,0,0-.36-1.19.81.81,0,0,0-.57-.21.86.86,0,0,0-.83.7,1.94,1.94,0,0,0-.11.7V43.91a1.67,1.67,0,0,0,.39,1.2.75.75,0,0,0,.55.21.83.83,0,0,0,.83-.71,1.76,1.76,0,0,0,.1-.7Z"/><path d="M541.33,36.27a2.43,2.43,0,0,1-.86,1.9,1.69,1.69,0,0,1-1.14.33,1.79,1.79,0,0,1-1.79-1.11,2.44,2.44,0,0,1-.24-1.12V30.73a2.29,2.29,0,0,1,.86-1.87,1.67,1.67,0,0,1,1.17-.34,1.81,1.81,0,0,1,1.74,1.12,2.61,2.61,0,0,1,.26,1.09ZM538.6,47.84l7-19.11h1.67l-6.95,19.11Zm1.17-17.11a1.15,1.15,0,0,0-.18-.6c-.05-.08-.13-.1-.26-.1-.29,0-.36.18-.44.36a.76.76,0,0,0,0,.34v5.54c0,.28,0,.7.47.7s.44-.42.44-.7Zm8.87,15.11a2.4,2.4,0,0,1-.86,1.87,1.69,1.69,0,0,1-1.14.34,1.87,1.87,0,0,1-1.8-1.09,2.57,2.57,0,0,1-.23-1.12V40.3a2.35,2.35,0,0,1,.86-1.9,1.72,1.72,0,0,1,1.17-.34,1.82,1.82,0,0,1,1.74,1.12,3.29,3.29,0,0,1,.26,1.12Zm-1.56-5.54a1.12,1.12,0,0,0-.18-.6c0-.08-.13-.1-.26-.1-.29,0-.37.18-.45.36a.76.76,0,0,0,0,.34v5.54a.69.69,0,0,0,.18.59.34.34,0,0,0,.29.13c.23,0,.31-.18.39-.36a1.84,1.84,0,0,0,.05-.36Z"/></g></g>
-                    </svg>
-                </div>
 
-                <div class="p-8">
-                    <p1 class="font-regular text-2xl m-5">
-                        <span class="text-accent">WEB</span>DEVELOPMENT<span class="text-accent">.</span>
-                    </p1>
-                    <svg class="h-12" id="ad6b258d-f8e5-4f36-b9b7-b794f2b97b42" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.19 58.08"><path id="f4f81b4b-f1ae-479f-99d1-7dc4c6f0aab1" data-name="Path 9" d="M8.05,55.08,3.34,42.16H271.11l4.71,12.92Z"/><g id="b4cd905a-856a-4d1e-81f2-ddce2805ad53" data-name="Group 12"><path id="bd4ac13c-ebca-4a51-9b2e-ef1c85951845" data-name="Path 10" d="M275.82,55.08l-4.71-12.92L272.28,3,277,15.92Z"/></g><g id="eaca3c8f-3d8e-4c4b-bb3c-c2c25eb25331" data-name="Group 13"><path id="a3fdbd77-4274-4b46-8562-2199b6a62fe2" data-name="Path 11" d="M9.22,15.92,4.51,3H272.28L277,15.92Z" style="fill:#1c3858"/></g><g id="f379eaf9-73c3-4600-958e-a00e35d29919" data-name="Group 14"><path id="fe85d61b-c876-4ac0-8a76-98acc46dfb13" data-name="Path 12" d="M8.05,55.08,3.34,42.16,4.51,3,9.22,15.92Z" style="fill:#172d46"/></g><g id="baf10492-ec5a-4428-a328-167c83ca266d" data-name="Group 15"><path id="a0095f7c-533e-4c2d-859f-6d69049bd31c" data-name="Path 13" d="M277,15.92l-1.17,39.16H8.05L9.22,15.92Z" style="fill:#fff"/></g><g id="abda4790-6bd2-41b0-b3aa-262f0c72fb8b" data-name="Group 16"><path id="fbcce6a2-9c1f-460c-b740-dedec1667e66" data-name="Path 14" d="M4.85,58.08.14,45.17,1.5,0,6.2,12.92Z"/></g><g id="b831a708-8a7a-4057-8ba8-9eb09cb07f72" data-name="Group 17"><path id="b6b3f295-d912-4511-804b-6d4dc6a7ee94" data-name="Path 15" d="M6.2,12.92,1.5,0h274l4.71,12.92Z"/></g><g id="a56a984b-68c4-4e7a-963f-c1844735c3b4" data-name="Group 18"><path id="bee55fa7-ccba-4bd8-8073-5d2b4e232a80" data-name="Path 16" d="M6.2,12.92h274l-1.36,45.16H4.85ZM275.82,55.08,277,15.92H9.22L8.05,55.08H275.82"/></g><g style="isolation:isolate"><g style="isolation:isolate"><path d="M236.79,38.16c0-.81-.29-1.41-.89-1.41a1.07,1.07,0,0,0-.78.52,1.82,1.82,0,0,0-.31.89h-2.37V28.1h6.79v2.78h-4.37v4a3.53,3.53,0,0,1,1-.58,1.13,1.13,0,0,1,.57-.07A2.76,2.76,0,0,1,239.13,36a5.84,5.84,0,0,1,.46,2.21v4.26a7.4,7.4,0,0,1-.54,3.15,3.17,3.17,0,0,1-3.12,1.84,3,3,0,0,1-3.12-1.95,9.66,9.66,0,0,1-.55-3.82h2.81v.76a7,7,0,0,0,.18,2c.13.39.34.57.68.57a.7.7,0,0,0,.65-.55,6.73,6.73,0,0,0,.21-2Z"/><path d="M248.62,43.28a5.39,5.39,0,0,1-.47,2.08,3.63,3.63,0,0,1-1.12,1.4,3.31,3.31,0,0,1-2.16.65,3.39,3.39,0,0,1-2.18-.65,3.45,3.45,0,0,1-1.09-1.4,5.05,5.05,0,0,1-.47-2.08V32A5,5,0,0,1,241.6,30a3.54,3.54,0,0,1,1.09-1.43,3.58,3.58,0,0,1,2.18-.65,3.49,3.49,0,0,1,2.16.65A3.71,3.71,0,0,1,248.15,30a5.37,5.37,0,0,1,.47,2.05ZM245.81,32a1.72,1.72,0,0,0-.37-1.19.8.8,0,0,0-.57-.21.86.86,0,0,0-.83.7,2,2,0,0,0-.1.7V43.28a1.67,1.67,0,0,0,.39,1.2.73.73,0,0,0,.54.2.81.81,0,0,0,.83-.7,1.74,1.74,0,0,0,.11-.7Z"/><path d="M254.21,35.64a2.48,2.48,0,0,1-.86,1.9,1.7,1.7,0,0,1-1.15.33,1.79,1.79,0,0,1-1.79-1.12,2.37,2.37,0,0,1-.23-1.11V30.1a2.3,2.3,0,0,1,.85-1.87,1.67,1.67,0,0,1,1.17-.34A1.82,1.82,0,0,1,254,29a3,3,0,0,1,.26,1.09Zm-2.73,11.57,7-19.11h1.66l-6.94,19.11Zm1.17-17.11a1,1,0,0,0-.19-.6c-.05-.08-.13-.1-.26-.1s-.36.18-.44.36a.76.76,0,0,0,0,.34v5.54c0,.28,0,.7.46.7s.45-.42.45-.7Zm8.86,15.1a2.39,2.39,0,0,1-.86,1.88,1.69,1.69,0,0,1-1.14.33,1.83,1.83,0,0,1-1.79-1.09,2.38,2.38,0,0,1-.24-1.12V39.67a2.34,2.34,0,0,1,.86-1.9,1.72,1.72,0,0,1,1.17-.34,1.81,1.81,0,0,1,1.74,1.12,2.88,2.88,0,0,1,.26,1.12ZM260,39.67a1.09,1.09,0,0,0-.18-.6.27.27,0,0,0-.26-.11c-.29,0-.36.19-.44.37a.75.75,0,0,0,0,.34V45.2a.74.74,0,0,0,.18.6.35.35,0,0,0,.29.13c.23,0,.31-.18.39-.36a1.44,1.44,0,0,0,.05-.37Z"/></g></g>
-                    </svg>
-                </div>
-
-                <div class="p-8">
-                    <p1 class="font-regular text-2xl m-5">
-                        <span class="text-accent">VER</span>KOOP<span class="text-accent">.</span>
-                    </p1>
-                    <svg class="h-12" id="af83275a-4e4a-4273-841d-0ab7b72b3058" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.41 58.09"><path id="afef2666-a822-4d47-a70f-988f442a9806" data-name="Path 17" d="M7.9,55.08,3.2,42.17H109.34L114,55.08Z"/><g id="f23a51d2-d52d-40fd-a47d-7453ab3ce475" data-name="Group 22"><path id="aa8906fb-68fc-4688-a6b6-045f1024da40" data-name="Path 18" d="M114,55.08l-4.7-12.91L110.51,3l4.71,12.91Z"/></g><g id="ae56233a-1861-4963-a884-8174ad2d71ee" data-name="Group 23"><path id="febc2ce0-0471-42f6-b50b-0b073e4dce0a" data-name="Path 19" d="M9.08,15.92,4.37,3H110.51l4.71,12.91Z" style="fill:#a63517"/></g><g id="b35774c8-4329-4fcd-893f-578902ce7f69" data-name="Group 24"><path id="aa243ad6-b117-4412-ac27-c09fb257b284" data-name="Path 20" d="M7.91,55.08,3.2,42.17,4.37,3,9.08,15.92Z" style="fill:#7a2b10"/></g><g id="a9256ca4-4db2-4381-96d9-3fea9792da79" data-name="Group 25"><path id="a7a5e5e7-b793-4006-ab23-a986c9572025" data-name="Path 21" d="M6.06,12.92H118.41l-1.35,45.17H4.71ZM114,55.08l1.18-39.16H9.08L7.9,55.08H114"/></g><g id="fb4602ef-d213-4a22-8bf0-d5bf63e2a760" data-name="Group 26"><path id="f40ac1eb-0afe-410e-8240-64508e60bb27" data-name="Path 22" d="M115.22,15.92,114,55.08H7.91L9.08,15.92Z" style="fill:#fff"/></g><g id="e8f8f78c-eab6-4e93-864e-a2362beb754e" data-name="Group 27"><path id="a16fcd7b-801e-45aa-8748-ef0a37e97bf0" data-name="Path 23" d="M4.71,58.09,0,45.17,1.35,0,6.06,12.92Z"/></g><path id="f28418c5-e70b-4279-a7ab-d5cfa2465146" data-name="Path 24" d="M6.06,12.92,1.35,0H113.71l4.7,12.92Z"/><g style="isolation:isolate"><g style="isolation:isolate"><path d="M71.82,32.7V31.37a6.79,6.79,0,0,1,.73-3.43,3.23,3.23,0,0,1,3-1.51,3.37,3.37,0,0,1,3,1.38,6.18,6.18,0,0,1,.78,3.38,17.7,17.7,0,0,1-1.64,6.42A46.64,46.64,0,0,1,74.92,43h4.44v2.78H71.74V43c.86-1.33,1.64-2.68,2.34-4a26.4,26.4,0,0,0,1.62-3.77,13.34,13.34,0,0,0,.8-3.8,6,6,0,0,0-.15-1.56c-.13-.44-.37-.78-.78-.78s-.63.29-.76.71a6,6,0,0,0-.18,1.63V32.7Z"/><path d="M88.67,41.83a5.21,5.21,0,0,1-.47,2.08,3.54,3.54,0,0,1-1.12,1.4,3.3,3.3,0,0,1-2.15.65,3.4,3.4,0,0,1-2.19-.65,3.45,3.45,0,0,1-1.09-1.4,5.21,5.21,0,0,1-.47-2.08V30.57a5.2,5.2,0,0,1,.47-2.06,3.54,3.54,0,0,1,1.09-1.43,3.59,3.59,0,0,1,2.19-.65,3.48,3.48,0,0,1,2.15.65,3.62,3.62,0,0,1,1.12,1.43,5.2,5.2,0,0,1,.47,2.06ZM85.86,30.57a1.74,1.74,0,0,0-.36-1.2.81.81,0,0,0-.57-.21.88.88,0,0,0-.84.71,2.15,2.15,0,0,0-.1.7V41.83A1.64,1.64,0,0,0,84.38,43a.75.75,0,0,0,.55.21.82.82,0,0,0,.83-.7,1.79,1.79,0,0,0,.1-.7Z"/><path d="M94.26,34.18a2.45,2.45,0,0,1-.86,1.9,1.69,1.69,0,0,1-1.14.34,1.81,1.81,0,0,1-1.8-1.12,2.54,2.54,0,0,1-.23-1.12V28.64a2.29,2.29,0,0,1,.86-1.87,1.72,1.72,0,0,1,1.17-.34A1.83,1.83,0,0,1,94,27.55a2.82,2.82,0,0,1,.26,1.09ZM91.53,45.75l7-19.11h1.66L93.27,45.75ZM92.7,28.64a1.08,1.08,0,0,0-.18-.59.27.27,0,0,0-.26-.11c-.29,0-.37.18-.44.37a.6.6,0,0,0,0,.33v5.54c0,.29,0,.7.47.7s.44-.41.44-.7Zm8.87,15.11a2.38,2.38,0,0,1-.86,1.87,1.65,1.65,0,0,1-1.15.34,1.84,1.84,0,0,1-1.79-1.09,2.41,2.41,0,0,1-.23-1.12V38.21a2.37,2.37,0,0,1,.85-1.9A1.72,1.72,0,0,1,99.56,36a1.83,1.83,0,0,1,1.75,1.11,3.34,3.34,0,0,1,.26,1.12ZM100,38.21a1.07,1.07,0,0,0-.19-.6.29.29,0,0,0-.26-.1c-.28,0-.36.18-.44.36a.77.77,0,0,0,0,.34v5.54a.72.72,0,0,0,.18.6.32.32,0,0,0,.28.13c.24,0,.32-.18.39-.36a1.43,1.43,0,0,0,.06-.37Z"/></g></g>
-                    </svg>
-                </div>
-
-                <div class="p-8">
-                    <p1 class="font-regular text-2xl m-5">
-                        <span class="text-accent">WEB</span>DESIGN<span class="text-accent">.</span>
-                    </p1>
-                    <svg class="h-12" id="f5a77425-78b2-4416-8a73-b13c8fc230c9" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570.83 58.08"><path id="eb0cacfd-a0c5-46cf-982b-38db64aa21fb" data-name="Path 25" d="M566.46,55.08l-4.71-12.92L562.93,3l4.7,12.92Z"/><path id="bc45776d-26ce-4447-ba4b-74bd71f31384" data-name="Path 26" d="M7.91,55.08,3.2,42.16H561.75l4.71,12.92Z"/><path id="aa9b88c8-3bb5-432b-b960-cdda5a41d314" data-name="Path 27" d="M9.08,15.92,4.37,3H562.93l4.71,12.92Z" style="fill:#a86889"/><path id="e4eba973-5b88-434f-b78f-cf0c6de6845a" data-name="Path 28" d="M7.91,55.08,3.2,42.16,4.37,3,9.08,15.92Z" style="fill:#7e4f67"/><path id="e3bb1739-8ff5-4b84-90b2-fe94b9a7550f" data-name="Path 29" d="M567.64,15.92l-1.18,39.16H7.91L9.08,15.92Z" style="fill:#fff"/><path id="ff2d5efd-3306-4499-b5c9-94cbaa45d9ad" data-name="Path 30" d="M4.71,58.08,0,45.17,1.35,0,6.06,12.92Z"/><path id="eb4414a9-a0af-41e4-bbe0-50e8f1d66cd0" data-name="Path 31" d="M6.06,12.92,1.35,0H566.12l4.71,12.92Z"/><path id="fb067f48-07d5-43a4-a28f-00c51ea28c3b" data-name="Path 32" d="M6.06,12.92H570.83l-1.35,45.16H4.71Zm560.4,42.16,1.18-39.16H9.08L7.9,55.08H566.46"/><g style="isolation:isolate"><g style="isolation:isolate"><path d="M526.72,43.76a6.94,6.94,0,0,1-.15,1.32,4,4,0,0,1-1,2,3.82,3.82,0,0,1-5.2,0,4,4,0,0,1-1-2,7.26,7.26,0,0,1-.16-1.32V41.52a5.23,5.23,0,0,1,1.46-3.77,5,5,0,0,1-1.3-3.51V32.63a5.41,5.41,0,0,1,.49-2.24,3.52,3.52,0,0,1,6.22,0,5.28,5.28,0,0,1,.47,2.24v1.61a5,5,0,0,1-1.31,3.51,5.19,5.19,0,0,1,1.46,3.77ZM524,42.64a19.21,19.21,0,0,0-.13-2.55c-.1-.55-.39-.83-.88-.83s-.78.28-.86.83a15.77,15.77,0,0,0,.08,4.73.77.77,0,0,0,.78.65.83.83,0,0,0,.88-.75A13.75,13.75,0,0,0,524,42.64Zm-.18-9a11.69,11.69,0,0,0-.13-2c-.1-.44-.34-.65-.7-.65s-.52.18-.63.57a13.64,13.64,0,0,0-.05,4.24c.08.47.31.7.68.7s.6-.23.7-.7A13.47,13.47,0,0,0,523.81,33.62Z"/><path d="M535.74,43.91a5.21,5.21,0,0,1-.46,2.08,3.65,3.65,0,0,1-1.12,1.41,3.39,3.39,0,0,1-2.16.65,3.46,3.46,0,0,1-2.19-.65A3.57,3.57,0,0,1,528.72,46a5.39,5.39,0,0,1-.47-2.08V32.65a5.37,5.37,0,0,1,.47-2,3.63,3.63,0,0,1,1.09-1.43,3.59,3.59,0,0,1,2.19-.65,3.51,3.51,0,0,1,2.16.65,3.71,3.71,0,0,1,1.12,1.43,5.18,5.18,0,0,1,.46,2Zm-2.81-11.26a1.71,1.71,0,0,0-.36-1.19.81.81,0,0,0-.57-.21.86.86,0,0,0-.83.7,1.94,1.94,0,0,0-.11.7V43.91a1.67,1.67,0,0,0,.39,1.2.75.75,0,0,0,.55.21.83.83,0,0,0,.83-.71,1.76,1.76,0,0,0,.1-.7Z"/><path d="M541.33,36.27a2.43,2.43,0,0,1-.86,1.9,1.69,1.69,0,0,1-1.14.33,1.79,1.79,0,0,1-1.79-1.11,2.44,2.44,0,0,1-.24-1.12V30.73a2.29,2.29,0,0,1,.86-1.87,1.67,1.67,0,0,1,1.17-.34,1.81,1.81,0,0,1,1.74,1.12,2.61,2.61,0,0,1,.26,1.09ZM538.6,47.84l7-19.11h1.67l-6.95,19.11Zm1.17-17.11a1.15,1.15,0,0,0-.18-.6c-.05-.08-.13-.1-.26-.1-.29,0-.36.18-.44.36a.76.76,0,0,0,0,.34v5.54c0,.28,0,.7.47.7s.44-.42.44-.7Zm8.87,15.11a2.4,2.4,0,0,1-.86,1.87,1.69,1.69,0,0,1-1.14.34,1.87,1.87,0,0,1-1.8-1.09,2.57,2.57,0,0,1-.23-1.12V40.3a2.35,2.35,0,0,1,.86-1.9,1.72,1.72,0,0,1,1.17-.34,1.82,1.82,0,0,1,1.74,1.12,3.29,3.29,0,0,1,.26,1.12Zm-1.56-5.54a1.12,1.12,0,0,0-.18-.6c0-.08-.13-.1-.26-.1-.29,0-.37.18-.45.36a.76.76,0,0,0,0,.34v5.54a.69.69,0,0,0,.18.59.34.34,0,0,0,.29.13c.23,0,.31-.18.39-.36a1.84,1.84,0,0,0,.05-.36Z"/></g></g>
-                    </svg>
-                </div>
-
-            </div>
-
-        </div>
+        <div class=" flex flex-row overflow-hidden">
+               <div class="bg-white z-10 ">
+                   <img  class="h-24" src="imgs/balkLinksTest.svg">
+               </div>
+   
+               <div id="balk1" class="z-0 balk2">
+                   <img  class="h-24" src="imgs/balkRechts.svg">
+                   <p1 id="percentageHTML1" class="percentage pt-6">0%</p1>
+               </div>
+       </div>
+   
+           <div class="flex flex-row overflow-hidden">
+               <div class="bg-white z-10">
+                   <img  class="h-24" src="imgs/balkLinksTest.svg">
+               </div>
+   
+               <div id="balk2" class="z-0 balk2">
+                   <img  class="h-24" src="imgs/balkRechts.svg">
+                   <p1 id="percentageHTML2" class="percentage pt-6">0%</p1>
+               </div>
+           </div>
+   
+   
+           <div class="flex flex-row overflow-hidden">
+               <div class="bg-white z-10">
+                   <img  class="h-24" src="imgs/balkLinksTest.svg">
+               </div>
+   
+               <div id="balk3" class="z-0 balk3">
+                   <img  class="h-24" src="imgs/balkRechts.svg">
+                   <p1 id="percentageHTML3" class="percentage pt-6">0%</p1>
+               </div>
+           </div>
+   
+           <div class="flex flex-row overflow-hidden">
+               <div class="bg-white z-10">
+                   <img  class="h-24" src="imgs/balkLinksTest.svg">
+               </div>
+   
+               <div id="balk4" class="z-0 balk2">
+                   <img  class="h-24" src="imgs/balkRechts.svg">
+                   <p1 id="percentageHTML4" class="percentage pt-6">0%</p1>
+               </div>
+           </div>
+   
+   
+       </div>
 
     <!--draai GIF-->
         
