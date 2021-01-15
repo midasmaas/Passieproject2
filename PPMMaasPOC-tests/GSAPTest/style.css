@@ -1,0 +1,15 @@
+.textAnimation {
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+    bottom: 0;
+}
+
+.hi{
+    display: inline-block;
+}
