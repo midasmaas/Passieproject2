@@ -1,0 +1,27 @@
+<div class="grid grid-cols-3 grid-rows-1 gap-4">
+    
+    <div class="col-start-2 row-start-1 flex-col">
+
+        <div class="z-0 p-8">
+            <p1 class="gsap font-regular text-9xl p-8">
+                WEBCREATIE
+            </p1>
+        </div>
+
+        <div class="z-40 absolute">
+
+            <a class="gsap buttonVierkant" href="#"></a> 
+            <p1 class="gsap p-8 text-6xl text-accent font-regular">
+                Met een Midas Touch
+            </p1>
+                
+        </div>
+
+    </div>
+        
+
+
+    <div class="foto col-start-2 col-span-1 row-start-1 z-10 w-4/5">
+        <img class="z-20" src="imgs/HoofdFoto.png">
+    </div>
+</div>
