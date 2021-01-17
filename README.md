@@ -24,8 +24,8 @@ In dit document tref je alle CSS classes die ik zelf heb aangemaakt. De belangri
 * Spotifybalon: een 'hidden' div die 'vissible' wordt bij hover. Dient als easter egg bij de draaiende LP
 * kroon-IMG: door gebruik van het :after-element blijft de kroon boven KONING staan in de intro van de website
 * animlijn/navlijn etc.: zorgen voor de geanimeerde lijnen onder knoppen en linkjes op de website
-*meerLinkje: een fix voor de buttons: hierdoor krijgt de gebruiker de juiste cursor te zien op de knop
-*button/socialButton etc.: een eerdere versie van de knoppen die gebruik maken van :before, :after, skew en transition om de ilusie van een 3D-knop te simmuleren.
+* meerLinkje: een fix voor de buttons: hierdoor krijgt de gebruiker de juiste cursor te zien op de knop
+* button/socialButton etc.: een eerdere versie van de knoppen die gebruik maken van :before, :after, skew en transition om de ilusie van een 3D-knop te simmuleren.
 
 IMGS
 Alle afbeeldingen die gebruikt zijn voor de website.
@@ -35,31 +35,31 @@ Ik heb een externe font geïmporteerd in Tailwind. Hier tref je de bestanden.
 
 SCRIPT
 Een script dat zorgt voor animatie naar de juiste positie via JS. 
-*smoothScroll: vraagt door CSS waarde top, de windowpositie en de vertreken tijd de waardes op die nodig zijn voor animation
-*animation: krijgt door de waardes uit Smoothscroll de juiste positie van de CSS-class
-*over/portfoio etc.: roepen smoothscroll aan om naar het div met deze naam te gaan.
-*toggleMenu: een fix om de box te checken die het hamburgermenu te openen.
+* smoothScroll: vraagt door CSS waarde top, de windowpositie en de vertreken tijd de waardes op die nodig zijn voor animation
+* animation: krijgt door de waardes uit Smoothscroll de juiste positie van de CSS-class
+* over/portfoio etc.: roepen smoothscroll aan om naar het div met deze naam te gaan.
+* toggleMenu: een fix om de box te checken die het hamburgermenu te openen.
 
 ANIMATION
 Voor meer info, verwijs ik naar de documentatie van GSAP: https://greensock.com/gsap/
 De belangrijkste timelines/classes zijn:
-*boxTL/masterTL: handelen samen de typeanimatie af
+* boxTL/masterTL: handelen samen de typeanimatie af
 *scrollTrigger: bepaalt de acties van de scrolltriggers. Fix voor de bug waar objecten na animatie verdewenen
 *spin: beweegt de LP
-*aangenaam/slagzin: bewegen divs over de X-as
-*boxJS/boxVK/boxFE: timelines die in combinatie met CSS-waarde overflow hidden voor de titelanimaties
-*tlBalken: zorgen voor de balkenanimatie. het is een div die over de X-as van achter een ander div tevoorschijn komt. De progressie van de animatie wordt als waarde gebruikt om als percentage in de balk te dienen.
-*window.onmousemove: laat de afbeelding uit Spotifylink(een CSS class die on hover een afbeelding toont) doet meebwegen met de cursor
+* aangenaam/slagzin: bewegen divs over de X-as
+* boxJS/boxVK/boxFE: timelines die in combinatie met CSS-waarde overflow hidden voor de titelanimaties
+* tlBalken: zorgen voor de balkenanimatie. het is een div die over de X-as van achter een ander div tevoorschijn komt. De progressie van de animatie wordt als waarde gebruikt om als percentage in de balk te dienen.
+* window.onmousemove: laat de afbeelding uit Spotifylink(een CSS class die on hover een afbeelding toont) doet meebwegen met de cursor
 
 ## **PPMMaasPOC-tests**
 Diende als testomegeving voor verschillende onderdelen van de website. Hetgeen dat uit deze fase is voortgekomen, leg ik uit in PPMMaasDefinitief. Ik omschrijf kort wat ik waarmee getest heb:
-*hamburger/hamburger.js: twee manieren om een hamburgermenu te maken. 
-*landingpagemaster: een voorbeeld van een Tailwind website waar ik inspiratie haalde uit de manier waarop het responsive is gemaakt.
-*ButtonImp/vierkant: tests van knoppen. Een soortgelijke button tref je nog aan in de uiteindelijke versie, maar is buiten gebruik
-*cubus: diende als test voor de uiteindelijke knop. Maakt gebruik van de CSS 3D-waardes
-*GSAPtest: tests met GSAP
-*progressiebars: tests voor de animaties van de balken die je treft onder 'De Specs' op de website
-*TestHover: een test voor de easter egg die treft bij de draainde LP op de website
+* hamburger/hamburger.js: twee manieren om een hamburgermenu te maken. 
+* landingpagemaster: een voorbeeld van een Tailwind website waar ik inspiratie haalde uit de manier waarop het responsive is gemaakt.
+* ButtonImp/vierkant: tests van knoppen. Een soortgelijke button tref je nog aan in de uiteindelijke versie, maar is buiten gebruik
+* cubus: diende als test voor de uiteindelijke knop. Maakt gebruik van de CSS 3D-waardes
+* GSAPtest: tests met GSAP
+* progressiebars: tests voor de animaties van de balken die je treft onder 'De Specs' op de website
+* TestHover: een test voor de easter egg die treft bij de draainde LP op de website
 
 
 ## **PPMMaasTestomgeving**
