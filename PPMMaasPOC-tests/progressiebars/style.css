@@ -1,0 +1,74 @@
+.button2::before, .button2::after {
+    position: absolute;
+    content: '';
+}
+
+.button2 {
+    display: inline-block;
+    color: #000000;
+    position: relative;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: solid #000000 5px;
+    width: 500px;
+    height: 75px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+.button2::before {
+    bottom: -1px;
+    height: 75px;
+    width: 7px;
+    left: -12px;
+    -webkit-transform: skewX(45deg);
+    transform: skewY(45deg);
+    background-color: #000000;
+}
+.button2::after {
+    right: 0;
+    height: 7px;
+    width: 500px;
+    bottom: 70px;
+    -webkit-transform: skewX(30deg);
+    background-color: #000000;
+
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background-image: url('infobalon-26.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 60px;
+
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
